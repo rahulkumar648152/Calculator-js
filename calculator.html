@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="calculator.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display">
+        <div class="button-container">
+        <button class="button" onclick="
+        currentDislay= '';
+        document.querySelector('#display').value=currentDislay;
+        ">c</button>
+
+
+        <button  class="button" onclick="
+        currentDislay= currentDislay +'1';
+        document.querySelector('#display').value=currentDislay;
+        ">1</button>
+
+
+        <button  class="button"  onclick="currentDislay =currentDislay+'2';
+        document.querySelector('#display').value=currentDislay;
+        ">2</button>
+
+        </div>
+        <div class="button-container">
+            <button class="button" onclick=" currentDislay= currentDislay +'+';
+            document.querySelector('#display').value=currentDislay;
+            ">+</button>
+
+            <button  class="button"    onclick="
+            currentDislay= currentDislay +'3';
+            document.querySelector('#display').value=currentDislay;
+            ">3</button>
+            <button  class="button"  onclick="
+            currentDislay= currentDislay +'4';
+            document.querySelector('#display').value=currentDislay;
+            ">4</button>
+    
+            </div>
+            <div class="button-container">
+                <button class="button" onclick="
+                currentDislay= currentDislay +'-';
+                document.querySelector('#display').value=currentDislay;
+                ">-</button>
+
+                <button  class="button" onclick="
+                currentDislay= currentDislay +'5';
+                document.querySelector('#display').value=currentDislay;
+                ">5</button>
+                <button  class="button" onclick="
+                currentDislay= currentDislay +'6';
+                document.querySelector('#display').value=currentDislay;
+                ">6</button>
+        
+                </div>
+                <div class="button-container">
+                    <button class="button" onclick="
+                    currentDislay= currentDislay +'*';
+                    document.querySelector('#display').value=currentDislay;
+                    ">*</button>
+                    <button  class="button" onclick="
+                    currentDislay= currentDislay +'7';
+                    document.querySelector('#display').value=currentDislay;
+                    ">7</button>
+                    <button  class="button" onclick="
+                    currentDislay= currentDislay +'8';
+                    document.querySelector('#display').value=currentDislay;
+                    ">8</button>
+            
+                    </div>
+                    <div class="button-container">
+                        <button class="button" onclick="
+                        currentDislay= currentDislay +'/';
+                        document.querySelector('#display').value=currentDislay;
+                        ">/</button>
+
+
+                        <button  class="button" onclick="
+                        let result = eval(currentDislay);
+                        
+                        currentDislay= result;
+                        document.querySelector('#display').value=currentDislay;
+                        ">=</button>
+
+
+
+                        <button  class="button" onclick="
+                        currentDislay= currentDislay +'9';
+                        document.querySelector('#display').value=currentDislay;
+                        ">9</button>
+                
+                        </div>
+                        <div class="button-container">
+                            <button class="button" onclick="
+                            currentDislay= currentDislay +'0';
+                            document.querySelector('#display').value=currentDislay;
+                            ">0</button>
+                            <button  class="button" onclick="
+                            currentDislay= currentDislay +'.';
+                            document.querySelector('#display').value=currentDislay;
+                            ">.</button>
+                    
+                            </div>
+
+<script>
+    let currentDislay='';
+    document.querySelector('#display').value=currentDislay;
+</script>
+</body>
+</html>  
